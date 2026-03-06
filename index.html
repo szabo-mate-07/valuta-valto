@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valuta váltó - Szabó Máté</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="before">
-        <label for="ertek">Váltandó érték: </label>
-        <input type="number" name="ertek" id="ertek"> HUF
-        <input type="radio" name="valuta" id="eur" value="EUR">
-        <label for="eur">EUR</label>
-        <input type="radio" name="valuta" id="gbp" value="GBP">
-        <label for="gbp">GBP</label>
-        <input type="radio" name="valuta" id="usd" value="USD">
-        <label for="usd">USD</label><br><br>
-
+        <div id="inputs">
+            <label for="ertek">Valuta váltó</label>
+            <input type="number" name="ertek" id="ertek"> HUF
+        </div>
+        <label for="eur"><input type="radio" name="valuta" id="eur" value="EUR">EUR</label>
+        <label for="gbp"><input type="radio" name="valuta" id="gbp" value="GBP">GBP</label>
+        <label for="usd"><input type="radio" name="valuta" id="usd" value="USD">USD</label><br><br>
         <button id="btn">Váltás</button>
     </div>
     <div id="after">
-        <label for="eredmeny">Váltott valuta: </label>
+        <label for="eredmeny">Váltott valuta:  </label>
         <input id="eredmeny" type="number" disabled><span id="eredmenyValuta"></span>
     </div>
     
