@@ -1,0 +1,47 @@
+body {
+    
+    display: flex;
+}
+
+body > * {
+    width: 50%;
+    margin: 0.5rem;
+    
+}
+
+
+@keyframes myAnimation {
+    0%   {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+    25%  {background-color:rgb(212, 212, 212); left:200px; top:0px;}
+    50%  {background-color:rgb(175, 175, 175); left:200px; top:200px;}
+    75%  {background-color:rgb(212, 212, 212); left:0px; top:200px;}
+    100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+}
+
+#before {
+    padding: 0.5rem;
+    
+    
+    width: 500px;
+    height: 150px;
+    position: relative;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 0.5rem;
+}
+
+#after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    position: relative;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 0.5rem;
+}
