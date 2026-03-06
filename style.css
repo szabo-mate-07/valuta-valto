@@ -11,37 +11,56 @@ body > * {
 
 
 @keyframes myAnimation {
-    0%   {background-color:rgb(255, 255, 255); left:0px; top:0px;}
-    25%  {background-color:rgb(212, 212, 212); left:200px; top:0px;}
-    50%  {background-color:rgb(175, 175, 175); left:200px; top:200px;}
-    75%  {background-color:rgb(212, 212, 212); left:0px; top:200px;}
-    100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+    0%   {background-color:rgb(255, 255, 255); left:0px; top:0px; border: 1px solid black;}
+    25%  {background-color:rgb(212, 212, 212); left:300px; top:0px; border: 1px solid gray;}
+    50%  {background-color:rgb(175, 175, 175); left:300px; top:300px; border: 1px solid gray;}
+    75%  {background-color:rgb(212, 212, 212); left:0px; top:300px; border: 1px solid gray;} 
+    100% {background-color:rgb(255, 255, 255); left:0px; top:0px; border: 1px solid black;}
 }
 
 #before {
+    font-size: 1.5rem;
     padding: 0.5rem;
-    
-    
-    width: 500px;
-    height: 150px;
+    width: 36rem;
+    height: 12rem;
     position: relative;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     animation-name: myAnimation;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     border-radius: 0.5rem;
 }
 
+#btn {
+    width: 100%;
+    height: 4.5rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
 #after {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 50px;
+    width: 36rem;
+    height: 3.5rem;
     position: relative;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     animation-name: myAnimation;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     border-radius: 0.5rem;
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color:rgb(70, 70, 70)
+}
+
+input[type=number] {
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
